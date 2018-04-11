@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: "https://jsonplaceholder.typicode.com/comments",
+                type: "GET",
+                success: function (data) {
+                    $.each(data, function(index, element) {
+						$("#dataz").append("Post ID: " + element.postId + "</br>ID: " + element.id + 
+						"</br>Name: " + element.name + "</br>Email: " + element.email + "</br>Body: " + element.body + "</br></br>");
+                     });
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="dataz"></div>
+</body>
+</html>
