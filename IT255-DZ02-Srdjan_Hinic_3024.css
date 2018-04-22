@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+}
+
+header {
+    background: green;
+    color: white;
+    padding: 15px 15px 5px 15px;
+}
+
+header h1 {
+    margin: 0;
+    display: inline;
+}
+
+nav ul {
+    margin: 0;
+    display: inline;
+}
+nav ul li {
+    margin: 0px;
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px 15px;
+    font-size: 17px;
+ }
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+#navslogan {
+    float:right;
+    
+    
+}
+
+#leftbox {
+    display: inline-block;
+    float: left;
+    height: 100%;
+    width: 10%;
+    margin: 0px;
+    background: #eee;
+    height: 100%;
+    
+}
+
+#leftbox a {
+    text-decoration: none;
+    color:black;
+    padding: 0px;
+    margin: 0px;
+}
+#leftbox ul {
+    margin: 0px;
+    padding: 15px;
+
+}
+
+#leftbox ul li {
+    list-style: none;
+    padding: 5px 0px 5px 0px;
+    margin: 0px;
+
+}
+
+#bodybox {
+    
+    margin: 15px;
+    width: 70%;
+    background:white;
+    text-align:center;
+    border: 10px;
+    display: inline-block;
+    
+    
+}
+
+
+
+.bodyelem{
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 8px #888888;
+    display: inline-block;
+    padding: 10px;
+}
+
+.bodyelempic {
+    
+    
+    box-shadow: 2px 2px 8px #888888;
+    float: left;
+    width: 208px;
+    height: 160px;
+    margin-right: 10px;
+    margin-top: 10px;
+    
+}
+
+.bodyelemtitle {
+    width: 100%;
+    
+}
+
+.bodyelemtitle h2 {
+    text-align:center;
+    
+    padding: 0px;
+    width: 100%;
+    
+}
+
+.bodyelemtext {
+    display:inline-block;
+    border: dotted;
+    margin-top:10px;
+    
+}
+
+.advert {
+    display: inline-block;
+    margin:auto;
+    text-align:center;
+    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+     
+}
+
+#rightbox {
+    
+    width: 10%;
+    height: 100%;
+    float: right;
+    margin: 10px 10px 0px 10px;
+    background: #eee;
+    
+    
+}
+
+
