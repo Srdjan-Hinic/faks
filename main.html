@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        // $(document).ready(function (location) {
+        //     $.ajax({
+        //         url: "http://worldtimeapi.org/api/timezone/Europe/London",
+        //         type: "GET",
+        //         success: function (html) {
+        //             var obj = html;
+        //             $("#city").append("Timezone: " + obj.timezone);
+        //             $("#celsius").append("Time: " + obj.datetime);
+        //         }
+        //     });
+        // });
+
+        function getJson(location) {
+            $.ajax({
+                url: "http://worldtimeapi.org/api/timezone/Europe/" + location,
+                type: "GET",
+                success: function (html) {
+                    var obj = html;
+                    $("#city").text("Timezone: " + obj.timezone);
+                    $("#time").text("Time: " + obj.datetime);
+                }
+            });
+        }
+
+        
+    </script>
+</head>
+
+<body>
+    <center>
+    <div>Select a european city to see the time!</div>
+    <button onclick="getJson('London')">London</button>
+    <button onclick="getJson('Belgrade')">Belgrade</button>
+    <button onclick="getJson('Warsaw')">Warsaw</button>
+    <button onclick="getJson('Moscow')">Moscow</button>
+    <button onclick="getJson('Rome')">Rome</button>
+    <button onclick="getJson('Paris')">Paris</button>
+    <button onclick="getJson('Madrid')">Madrid</button>
+    <div id="city"></div>
+    <div id="time"></div>
+</center>
+</body>
+
+</html>
