@@ -1,5 +1,5 @@
 <?php
-// Get all possible anagrams for a word over an external API!
+// Get all possible anagrams for a word over an external API!!
 $a = $_GET['a'];
 
 $ch = curl_init();
