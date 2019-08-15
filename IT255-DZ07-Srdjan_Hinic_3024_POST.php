@@ -1,5 +1,5 @@
 <?php
-    // Displays the root, square and primarity of a number
+    // Displays the root, square and primarity of a number!
 $a = $_POST['a'];
 
     header("Content-type: application/json");
